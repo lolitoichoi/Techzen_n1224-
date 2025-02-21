@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.techzen.academy_n1224.AcademyN1224ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-21T12:22:58" hostname="DESKTOP-75LDC5J" time="1.615">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.techzen.academy_n1224.AcademyN1224ApplicationTests" time="1.615"/>
+  <system-out><![CDATA[19:22:55.211 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.techzen.academy_n1224.AcademyN1224ApplicationTests]: AcademyN1224ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:22:55.436 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.techzen.academy_n1224.AcademyN1224Application for test class com.techzen.academy_n1224.AcademyN1224ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.2)
+
+2025-02-21T19:22:56.336+07:00  INFO 9000 --- [academy-n1224] [    Test worker] c.t.a.AcademyN1224ApplicationTests       : Starting AcademyN1224ApplicationTests using Java 17.0.8 with PID 9000 (started by ACER in D:\intellj\spring boot\academy-n1224)
+2025-02-21T19:22:56.336+07:00  INFO 9000 --- [academy-n1224] [    Test worker] c.t.a.AcademyN1224ApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T19:22:58.811+07:00  INFO 9000 --- [academy-n1224] [    Test worker] c.t.a.AcademyN1224ApplicationTests       : Started AcademyN1224ApplicationTests in 2.968 seconds (process running for 5.878)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
