@@ -1,4 +1,4 @@
-package com.techzen.academy_n1224.exception;
+package com.techzen.academy_n1224.until;
 
 import com.techzen.academy_n1224.dto.ApiRespone;
 import org.springframework.http.HttpStatus;

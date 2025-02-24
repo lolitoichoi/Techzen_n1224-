@@ -1,5 +1,6 @@
-package com.techzen.academy_n1224;
+package com.techzen.academy_n1224.model;
 
+import com.techzen.academy_n1224.Gender;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 

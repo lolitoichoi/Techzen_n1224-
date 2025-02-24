@@ -1,9 +1,9 @@
 package com.techzen.academy_n1224.controller;
 
-import com.techzen.academy_n1224.DPM.Department;
+import com.techzen.academy_n1224.model.Department;
 import com.techzen.academy_n1224.exception.ApiException;
 import com.techzen.academy_n1224.exception.ErrorCode;
-import com.techzen.academy_n1224.exception.JsonRespone;
+import com.techzen.academy_n1224.until.JsonRespone;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

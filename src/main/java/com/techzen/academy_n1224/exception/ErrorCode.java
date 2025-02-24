@@ -1,6 +1,5 @@
 package com.techzen.academy_n1224.exception;
 
-import com.techzen.academy_n1224.DPM.Department;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.http.HttpStatus;

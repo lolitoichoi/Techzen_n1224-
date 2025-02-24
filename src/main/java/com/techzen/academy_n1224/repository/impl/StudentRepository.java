@@ -1,12 +1,8 @@
-package com.techzen.academy_n1224.repository;
+package com.techzen.academy_n1224.repository.impl;
 
-import com.techzen.academy_n1224.IStudentService;
 import com.techzen.academy_n1224.Student;
-import com.techzen.academy_n1224.dto.ApiRespone;
-import com.techzen.academy_n1224.exception.ApiException;
-import com.techzen.academy_n1224.exception.ErrorCode;
+import com.techzen.academy_n1224.repository.IStudentRepository;
 import org.springframework.context.annotation.Scope;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

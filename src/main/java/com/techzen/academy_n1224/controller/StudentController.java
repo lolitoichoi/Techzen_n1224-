@@ -5,22 +5,13 @@ import com.techzen.academy_n1224.Student;
 import com.techzen.academy_n1224.dto.ApiRespone;
 import com.techzen.academy_n1224.exception.ApiException;
 import com.techzen.academy_n1224.exception.ErrorCode;
-import com.techzen.academy_n1224.repository.StudentRepository;
-import com.techzen.academy_n1224.service.StudentService;
 import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 @RestController
 @RequestMapping("/student")
