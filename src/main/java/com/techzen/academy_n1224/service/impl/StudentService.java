@@ -1,7 +1,7 @@
 package com.techzen.academy_n1224.service.impl;
 
-import com.techzen.academy_n1224.IStudentService;
-import com.techzen.academy_n1224.Student;
+import com.techzen.academy_n1224.service.IStudentService;
+import com.techzen.academy_n1224.model.Student;
 import com.techzen.academy_n1224.repository.IStudentRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
@@ -19,8 +19,8 @@ import java.util.List;
 public class StudentService implements IStudentService {
     private IStudentRepository studentRepository;
 
-    public List<Student> findByName(String name) {
-        return studentRepository.findByName(name);
+    public List<Student> findByName(String name,Double fromScore, Double toScore) {
+        return studentRepository.findAtribute(name,fromScore,toScore);
     }
 
     public Student findById(int id) {

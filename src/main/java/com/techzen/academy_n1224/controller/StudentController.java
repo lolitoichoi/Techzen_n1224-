@@ -1,7 +1,7 @@
 package com.techzen.academy_n1224.controller;
 
-import com.techzen.academy_n1224.IStudentService;
-import com.techzen.academy_n1224.Student;
+import com.techzen.academy_n1224.service.IStudentService;
+import com.techzen.academy_n1224.model.Student;
 import com.techzen.academy_n1224.dto.ApiRespone;
 import com.techzen.academy_n1224.exception.ApiException;
 import com.techzen.academy_n1224.exception.ErrorCode;
@@ -23,13 +23,13 @@ public class StudentController {
     private final IStudentService studentService;
 
     @GetMapping
-    public ResponseEntity<?> getAllStudents(@RequestParam(defaultValue = "") String name) {
-        return ResponseEntity.ok(ApiRespone.builder().data(studentService.findByName(name)).build());
+    public ResponseEntity<?> getAllStudents(@RequestParam(defaultValue = "") String name, Double fromScore, Double toScore) {
+        return ResponseEntity.ok(ApiRespone.builder().data(studentService.findByName(name,fromScore,toScore)).build());
     }
 
     // @RequestMapping("/student")
     @GetMapping("/{id}")
-    public ResponseEntity<ApiRespone<Student>> getById(@PathVariable("id") int id) {
+    public ResponseEntity<ApiRespone<Student>> getById(@PathVariable("id") int id,Double fromScore, Double toScore) {
         Student student = studentService.findById(id);
         if (student == null) {
             throw new ApiException(ErrorCode.STUDENT_NOT_EXIT);
