@@ -10,6 +10,7 @@ import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -21,7 +22,14 @@ public class EmployeeService implements IEmployeeService {
 
     @Override
     public List<Employee> findByAttributes(EmployeeSearchRequest employeeSearchRequest) {
-        return employeeRepository.findByAttributes(employeeSearchRequest);
+      return employeeRepository.findByAttributes(employeeSearchRequest.getName(),
+              employeeSearchRequest.getDobFrom(),
+              employeeSearchRequest.getDobTo(),
+              employeeSearchRequest.getSalary(),
+              employeeSearchRequest.getGender(),
+              employeeSearchRequest.getPhone(),
+              employeeSearchRequest.getDepartmentId()
+              );
     }
     @Override
     public Optional <Employee> findById(UUID id) {

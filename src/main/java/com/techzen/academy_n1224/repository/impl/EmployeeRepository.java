@@ -29,13 +29,13 @@ public class EmployeeRepository implements IEmployeeRepository {
 
         Session session = ConnectionUtil.sessionFactory.openSession();
 
-        String hql = "from Employee e left join fetch e.departments where "
+        String hql = "from Employee e left join fetch e.department where "
                 + "(:name is null or lower(e.name) like concat('%', :name, '%')) "
                 + "and (:dobFrom is null or e.dob >= :dobFrom) "
                 + "and (:dobTo is null or e.dob <= :dobTo)"
                 + "and (:gender is null or e.gender = :gender)"
                 + "and (:phone is null or e.phone like concat('%', :phone, '%'))"
-                + "and (:departments is null or e.departments.id = :departments.Id)";
+                + "and (:departments is null or e.department = :departmentId)";
 
 
         if (employeeSearchRequest.getSalary() != null) {
